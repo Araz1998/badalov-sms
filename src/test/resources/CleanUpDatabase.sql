@@ -1,0 +1,1 @@
+TRUNCATE TABLE sms_audit_log;

@@ -1,0 +1,16 @@
+{
+  "request": {
+    "urlPath": "/RiCHClientServiceREST.svc/SendSmsConfirmationPost",
+    "method": "POST",
+    "bodyPatterns": [{
+      "matchesJsonPath": "$[?(@.message == 'T2 error message')]"
+    }]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\n\t\"ErrorCode\":\"1\",\n\t\"ErrorMessage\":\"String content\",\n\t\"Sms\":{\n\t\t\"CharacterType\":\"0\",\n\t\t\"Characters\":\"2147483647\",\n\t\t\"CreatedDate\":\"\\/Date(928138800000+0300)\\/\",\n\t\t\"DeliveryRequest\":\"true\",\n\t\t\"EmailText\":\"String content\",\n\t\t\"MessageCost\":12678967.543233,\n\t\t\"Number\":\"String content\",\n\t\t\"PartCost\":12678967.543233,\n\t\t\"Parts\":2147483647,\n\t\t\"Priority\":0,\n\t\t\"Text\":\"String content\",\n\t\t\"UniCode\":true,\n\t\t\"CampaignId\":\"1627aea5-8e0a-4371-9022-9b504344e724\",\n\t\t\"CampaignName\":\"String content\",\n\t\t\"Count\":2147483647,\n\t\t\"Direction\":0,\n\t\t\"Flag\":0,\n\t\t\"Id\":\"1627aea5-8e0a-4371-9022-9b504344e724\",\n\t\t\"MessageFirstName\":\"String content\",\n\t\t\"MessageLastName\":\"String content\",\n\t\t\"MessageUsername\":\"String content\",\n\t\t\"Recipient\":\"String content\",\n\t\t\"RecipientsSummary\":[{\n\t\t\t\"Count\":2147483647,\n\t\t\t\"Percentage\":2147483647,\n\t\t\t\"Status\":0\n\t\t}],\n\t\t\"Sender\":\"String content\",\n\t\t\"Status\":0,\n\t\t\"Subject\":\"String content\",\n\t\t\"TotalCost\":12678967.543233,\n\t\t\"Type\":0,\n\t\t\"UserId\":\"1627aea5-8e0a-4371-9022-9b504344e724\",\n\t\t\"VoiceCampaign\":[{\n\t\t\t\"MessageRecipientSummaryData\":{\n\t\t\t\t\"Count\":2147483647,\n\t\t\t\t\"Percentage\":2147483647,\n\t\t\t\t\"Status\":0\n\t\t\t}\n\t\t}]\n\t},\n\t\"UnAcceptedNumbers\":[\"String content\"]\n}",
+    "headers": {
+      "Content-type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+server:
+  port: 26001
+
+sms:
+  test:
+    unifonic:
+      url: http://localhost:26001/rest/SMS/messages
+      appSid: test
+      senderId: Araz
+    t2:
+      password: testpassword
+      sender: Test
+      username: araz.badalov@gmail.com
+      url: http://localhost:26001/RiCHClientServiceREST.svc/SendSmsConfirmationPost
+  test2:
+    unifonic:
+      url: http://localhost:26001/rest/SMS/messages/TEST2
+      appSid: test
+      senderId: Araz
+    t2:
+      password: testpassword
+      sender: Test
+      username: araz.badalov@gmail.com
+      url: http://localhost:26001/RiCHClientServiceREST.svc/SendSmsConfirmationPost

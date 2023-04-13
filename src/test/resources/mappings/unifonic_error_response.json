@@ -1,0 +1,17 @@
+{
+  "request": {
+    "urlPath": "/rest/SMS/messages",
+    "method": "POST",
+    "queryParameters" : {
+      "Recipient": {
+        "contains" : "111111"
+      }
+    }
+  },
+  "response": {
+    "body": "{\n    \"success\": false,\n    \"message\": \"T2 Successful message\",\n    \"errorCode\": \"ER-00\",\n    \"data\": {\n        \"MessageID\": 2000000172800,\n        \"CorrelationID\": \"\",\n        \"Status\": \"Queued\",\n        \"NumberOfUnits\": 0,\n        \"Cost\": 0,\n        \"Balance\": 0,\n        \"Recipient\": \"966505980169\",\n        \"TimeCreated\": \"2018-05-13 10:58:21.888\",\n        \"CurrencyCode\": \"\"\n    }\n}",
+    "headers": {
+      "Content-type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <springProperty scope="context" name="name" source="spring.application.name"/>
+
+
+    <appender name="json" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <fieldNames>
+                <version>[ignore]</version>
+            </fieldNames>
+            <customFields>{"service_name":"${name}"}</customFields>
+            <includeMdcKeyName>trace_id</includeMdcKeyName>
+        </encoder>
+    </appender>
+
+    <logger name="jsonLogger" level="INFO">
+        <appender-ref ref="json"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="json" />
+    </root>
+</configuration>
